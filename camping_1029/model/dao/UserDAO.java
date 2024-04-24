@@ -140,7 +140,7 @@ public int update(User user_information) {
 	preState.setString(7, user_information.getUser_ID());
 	int result = preState.executeUpdate();
 	if(result > 0) {
-	System.out.println("새로운 정보로 업데이트 완료되었습니다.");
+	System.out.println("새로운 정보로 업데이트되었습니다.");
 	return 1;
 	} else if(result <= 0) {
 	System.out.println("업데이트 실패하였습니다.");
